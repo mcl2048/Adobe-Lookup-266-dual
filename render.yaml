@@ -1,0 +1,23 @@
+# Configuration for Render Blueprint (also compatible with Northflank)
+
+services:
+  # A Web Service for the Next.js application
+  - type: web
+    name: adobe-subscription-lookup
+    # Runtime environment for the service
+    env: node
+    # The branch to deploy from
+    branch: main # Or your default branch
+    # Build command to install dependencies and build the app
+    buildCommand: "npm install && npm run build"
+    # Start command to run the production server
+    startCommand: "npm run start"
+    # Health check path. Northflank/Render will use this to determine if the service is healthy.
+    healthCheckPath: "/"
+    # Environment variables can be added here
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # The PORT is typically set automatically by the platform, but can be specified if needed.
+      # - key: PORT
+      #   value: 9002 # The port your app listens on, if not default 3000

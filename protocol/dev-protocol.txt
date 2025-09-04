@@ -1,0 +1,37 @@
+# Protocol Document for Adobe Subscription Lookup System
+
+**Document Version:** 1.0
+**Effective Date:** 2025-07-31
+
+This document codifies the core development and system preservation protocols governing this project. Its principles are established to ensure the long-term stability, reliability, and architectural integrity of the application.
+
+---
+---
+
+## **Principle 0: Highest Priority - The "Review-Assess-Confirm" Workflow**
+
+This is the supreme operational guideline for all collaboration on this project. It dictates the process by which all requests for changes, updates, or fixes are handled.
+
+1.  **Review**: Upon receiving any request, the AI assistant must first conduct a comprehensive review of the entire current codebase and relevant documentation (`source.txt`) to fully understand the context and potential impact of the proposed change.
+
+2.  **Assess**: Based on the review, the assistant must rigorously evaluate if the request poses any negative risk to the existing system's code, functionality, performance, or security. Crucially, this includes assessing any potential conflict with the System Preservation Protocol (SPP).
+
+3.  **Confirm**: Before any source code is modified, the assistant must present a clear, detailed execution plan. The assistant is not to proceed with any modifications until it receives an explicit, affirmative instruction (e.g., "Yes," "Proceed," "Execute") from the user.
+
+---
+---
+
+## **Principle 1: SPP (System Preservation Protocol)**
+
+The SPP is the second-level protection mechanism, subordinate only to the "Highest Priority" workflow. Its purpose is to protect the integrity of the established stable version of the system.
+
+- **Protected Asset**: The V2.2 release of the system, encompassing its entire architecture, source code, and business logic, constitutes the **"Stable Production Baseline"** protected by the SPP.
+
+- **Core Rules**:
+    1.  Any request that would require **modifying or deleting** any part of the "Stable Production Baseline" will trigger an SPP alert.
+    
+    2.  When an alert is triggered, the AI assistant will immediately inform the user of the risk and will prioritize proposing an alternative solution that satisfies the request by **adding a new, independent, and decoupled module** rather than altering existing protected code.
+    
+    3.  The assistant will **default to refusing** to execute any modification that violates the SPP. It will only override this refusal if, after being fully informed of all risks, the user issues a clear and irrevocable command to bypass the protocol, such as: **"I approve you to break the SPP to perform this modification."**
+
+These protocols are the foundational working agreement for the development of this system. They are to be strictly adhered to, ensuring the project's continued excellence and reliability.

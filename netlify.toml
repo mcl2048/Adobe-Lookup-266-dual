@@ -1,0 +1,17 @@
+# Configuration for Netlify
+
+[build]
+  # Command to build the Next.js application
+  command = "npm run build"
+  
+  # The directory where the built assets are located
+  publish = ".next"
+
+[build.environment]
+  # Set Node.js version if needed
+  # NODE_VERSION = "20"
+
+# The Netlify Next.js plugin is typically auto-installed and applied,
+# but can be specified explicitly if needed.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

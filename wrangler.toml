@@ -1,0 +1,26 @@
+# Configuration for Cloudflare Pages deployment via Wrangler
+
+# Top-level configuration
+name = "adobe-subscription-lookup" # Replace with your desired project name on Cloudflare
+compatibility_date = "2024-07-26" # Use the date you are creating this file or a recent compatible date
+
+# --- Recommended Deployment Method ---
+# For the best results with Next.js, it is highly recommended to connect your
+# Git repository (e.g., GitHub, GitLab) directly to your project in the
+# Cloudflare Pages dashboard.
+#
+# In your project's build settings on Cloudflare, configure the following:
+# 1. Framework Preset: Next.js
+# 2. Build Command: npm run build:cf
+# 3. Build output directory: .vercel/output/static
+#
+# The `npm run build:cf` script in `package.json` is specifically designed
+# to use `@cloudflare/next-on-pages` to create a build optimized for
+# Cloudflare's infrastructure.
+#
+# --- Manual Deployment (Advanced) ---
+# If you need to deploy manually via the command line, you can use:
+# npx wrangler pages deploy .vercel/output/static
+#
+# This file is intentionally kept minimal as the primary configuration
+# should reside in the Cloudflare dashboard for automated Git-based deployments.
